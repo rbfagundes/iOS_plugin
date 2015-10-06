@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  id="br.com.fullgauge.sitradmobile"
+  version="1.0.6">
+
+	<name>Crypto</name>
+	 
+	<description>
+		Crypto Plugin Description
+	</description>
+	
+	<license>MIT</license>
+
+	<engines>
+		<engine name="cordova" version=">=3.0.0" />
+	</engines>  
+
+	<js-module src="www/Crypto.js" name="Crypto">
+		<clobbers target="cordova.plugins.Crypto" />
+	</js-module>
+
+	<!-- ios -->
+	<platform name="ios">
+		<config-file target="config.xml" parent="/*">
+			<feature name="Crypto">
+				<param name="ios-package" value="Crypto"/>
+			</feature>
+		</config-file>
+	
+	 <header-file src="src/ios/Base64.h" />
+	 <header-file src="src/ios/Crypto.h" />
+	 
+	 <source-file src="src/ios/Base64.m" />
+	 <source-file src="src/ios/Crypto.m" />
+	</platform>
+</plugin>
