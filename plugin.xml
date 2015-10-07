@@ -28,10 +28,10 @@
 			</feature>
 		</config-file>
 	
-	 <header-file src="src/ios/Base64.h" />
+	 <!--<header-file src="src/ios/Base64.h" />-->
 	 <header-file src="src/ios/Crypto.h" />
 	 
-	 <source-file src="src/ios/Base64.m" />
+	 <!--<source-file src="src/ios/Base64.m" />-->
 	 <source-file src="src/ios/Crypto.m" />
 	</platform>
 </plugin>
