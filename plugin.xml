@@ -17,7 +17,7 @@
 	</engines>  
 
 	<js-module src="www/Crypto.js" name="Crypto">
-		<clobbers target="cordova.plugins.Crypto" />
+		<clobbers target="Crypto" />
 	</js-module>
 
 	<!-- ios -->
