@@ -12,19 +12,15 @@
 	
 	<license>MIT</license>
 
-	<engines>
-		<engine name="cordova" version=">=3.0.0" />
-	</engines>  
-
 	<js-module src="www/Crypto.js" name="Crypto">
-		<clobbers target="Crypto" />
+		<clobbers target="cordova.plugins.Crypto" />
 	</js-module>
 
 	<!-- ios -->
 	<platform name="ios">
 		<config-file target="config.xml" parent="/*">
 			<feature name="Crypto">
-				<param name="ios-package" value="Crypto"/>
+				<param name="ios-package" value="br.com.fullgauge.sitradmobile.Crypto"/>
 			</feature>
 		</config-file>
 	
