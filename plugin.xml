@@ -11,8 +11,8 @@
 
   <asset src="www/Crypto.js" target="js/Crypto.js"/>
 
-  <js-module src="www/hello.js" name="hello">
-    <clobbers target="hello" />
+  <js-module src="www/crypto.js" name="crypto">
+    <clobbers target="crypto" />
   </js-module>
 
   <platform name="ios">
