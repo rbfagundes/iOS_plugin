@@ -9,7 +9,7 @@
     <engine name="cordova" version=">=3.4.0"/>
   </engines>
 
-  <asset src="www/Crypto.js" target="js/Crypto.js"/>
+  <asset src="www/crypto.js" target="js/crypto.js"/>
 
   <js-module src="www/crypto.js" name="crypto">
     <clobbers target="crypto" />
